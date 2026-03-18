@@ -425,10 +425,10 @@
 
 <script>
 // ── Config — edit these to match your model ──────────────────────────────────
-const MODEL_URL  = "model.onnx";   // path relative to index.html in your repo
+const MODEL_URL  = "model.onnx.data";   // path relative to index.html
 const IMG_SIZE   = 320;            // matches training resolution
 const THRESHOLD  = 0.5;            // sigmoid threshold for mask binarisation
-// ImageNet mean/std — correct for EfficientNet-b4 pretrained encoder
+
 const MEAN = [0.485, 0.456, 0.406];
 const STD  = [0.229, 0.224, 0.225];
 // ─────────────────────────────────────────────────────────────────────────────
