@@ -425,7 +425,7 @@
 
 <script>
 // ── Config — edit these to match your model ──────────────────────────────────
-const MODEL_URL  = "model.onnx.data";   // path relative to index.html
+const MODEL_URL  = "model.onnx";   // path relative to index.html
 const IMG_SIZE   = 320;            // matches training resolution
 const THRESHOLD  = 0.5;            // sigmoid threshold for mask binarisation
 
@@ -462,7 +462,7 @@ async function loadModel() {
     });
     setLog("Model ready — upload a mammogram to begin.");
   } catch (e) {
-    setLog("Failed to load model.onnx — make sure it's in the same folder as index.html.", "error");
+    setLog("Failed to load model.onnx.", "error");
     console.error(e);
   }
 }
